@@ -7,7 +7,7 @@ document.getElementById('title').innerHTML = urlParams.get('title');
 
 const colorStyle = document.querySelector('.color');
 colorStyle.setAttribute('style', `background-color : ${urlParams.get('color') }`);
-
+console.log(urlParams.get('color'));
 
 gsap.set(".color", { opacity: 1, scaleX: 0, scaleY: 0.005 });
 gsap.set(".heading", { opacity: 0.1, transformOrigin: "center" });
